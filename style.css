@@ -1,0 +1,109 @@
+/* =============
+        Root
+   =============*/
+   :root {
+    --primary-color: #4291da;
+    --secondry-color: #19213a; 
+    --background-gradient: linear-gradient(135deg, #19213a, #354669);
+    --white-color: #fff;
+    --text-secondary-color: #aaa; 
+    --icon-bg: rgba(255, 255, 255, 0.1);
+    --shadow-color: rgba(66, 145, 218, 0.8);
+    --border-radius: 20px;
+    --transition-speed: 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: var(--background-gradient);
+    font-family: Arial, sans-serif;
+    color: var(--white-color);
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #fff, var(--primary-color), var(--primary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* =============
+      Button 
+   =============*/
+.btn {
+    background: var(--primary-color);
+    border: none;
+    padding: 8px 18px;
+    border-radius: var(--border-radius);
+    color: var(--white-color);
+    font-size: 14px;
+    cursor: pointer;
+    transition: background var(--transition-speed), box-shadow var(--transition-speed), transform var(--transition-speed);
+}
+
+.btn:hover { 
+    box-shadow: 0 0 15px var(--shadow-color);
+    transform: translateY(-5px); /* Move up by 5px */
+}
+   /* =============
+        Navbar  
+   =============*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;  
+    color: var(--text-color);
+}
+ 
+.logo img{
+    width: 60px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a{
+    color: var(--text-secondary-color);
+    font-size: 16px;
+    transition: color var(--transition-speed);
+}
+
+.nav-links a:hover{
+    color: var(--white-color);
+}
+
+.nav-icons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-icons i{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--icon-bg);
+    transition: background var(--transition-speed), box-shadow var(--transition-speed), transform var(--transition-speed);
+}
+
+.nav-icons i:hover{
+    background: var(--primary-color);
+    box-shadow: 0 0 10px var(--shadow-color);
+    transform: translateY(-5px);
+}
+
