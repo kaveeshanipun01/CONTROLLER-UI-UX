@@ -107,3 +107,122 @@ body {
     transform: translateY(-5px);
 }
 
+/* Horizontal Line */
+.indicator.horizontal {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-top: 30px;
+    top: 30%; 
+    left: -80px;
+}
+
+.indicator.horizontal .line {
+    width: 180px;
+    height: 2px;
+    background: var(--text-secondary-color);
+    margin-left: 100px; 
+}
+
+/* Vertical Line */
+.indicator.vertical {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    top: 80%; 
+    left: 55%;
+}
+
+.indicator.vertical .line {
+    width: 2px;
+    height: 180px;
+    background: var(--text-secondary-color);
+    top: -100px;
+}
+
+/* =============
+      Quality
+   =============*/
+.quality {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 150px;
+    min-height: 50vh; 
+}
+
+.quality-images {
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+.quality-images img {
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+    object-fit: cover;
+    box-shadow: 0 0 70px rgba(66, 145, 218, 0.7);
+}
+
+.circle-1 {
+    width: 300px;
+    height: 300px;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circle-2 {
+    width: 210px;
+    height: 210px;
+    top: 130px;
+    left: 100%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.circle-3 {
+    width: 250px;
+    height: 250px;
+    top: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quality-text {
+    max-width: 430px;
+}
+
+.quality-text h2 {
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.quality-text h2 span {
+    color: #9b8af7;
+}
+
+.quality-text p {
+    color: var(--text-secondary-color);
+    margin: 15px 0 20px;
+}
+
+.quality-list {
+    list-style: none;
+}
+
+.quality-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #bbb;
+}
+
+.quality-list li::before {
+    content: '\2713';
+    color: var(--primary-color);
+    font-weight: bold;
+}
