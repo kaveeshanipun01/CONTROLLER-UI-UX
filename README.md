@@ -1,6 +1,11 @@
 # XB Shop - E-commerce Website
+![Screenshot 2025-03-15 210155](https://github.com/user-attachments/assets/d9806865-d86b-4256-a3f5-9fbb49e24e59)
+![Screenshot 2025-03-15 210210](https://github.com/user-attachments/assets/d9b68c65-2bb1-44f0-8b32-73950eacccb4)
+![Screenshot 2025-03-15 210233](https://github.com/user-attachments/assets/58630b5b-adb9-408d-be38-017350e12eeb)
+![Screenshot 2025-03-15 210251](https://github.com/user-attachments/assets/10320e3e-2fed-4612-9308-7d482fb1e22a)
 
 ## Description
+
 This project is a responsive e-commerce website for gaming accessories, featuring a modern navigation bar, hero section, quality features, user guidelines, sales promotions, and a comprehensive footer. The site is designed using HTML, CSS, and includes animations via the AOS (Animate On Scroll) library.
 
 ## Features
